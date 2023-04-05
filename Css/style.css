@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: gray;
+}
+
+.container{
+    background-color: #ffff;
+    width: 60%;
+    min-width: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.img-container img{
+    width: 100%;
+    position: relative;
+    display: none;
+    
+}
+
+
+.active{
+    display: block !important;
+}
+
+.dot-container{
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+   outline: none;
+   cursor: pointer;
+}
+.dot-container button{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border:3px solid #a949cf;
+    background-color: transparent;
+
+}
+
+.dot-container button:nth-child(1){
+    background-color: #8052ec;
+}
+
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #8052ec;
+    color: #ffff;
+    margin: auto;
+    border: none;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+ 
+
+}
+
+#prev{
+    left: 15px;
+}
+#next{
+    right: 15px;
+}
+
